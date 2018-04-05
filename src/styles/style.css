@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+
+
+
+
+
+#menu {
+    background-image: linear-gradient(145deg, #1D1F20, #404348);
+    overflow:  hidden;
+}
+
+.menu_section {
+    margin: 25px 0;
+}
+
+.menu_title {
+    text-transform: uppercase;
+    color: #85888d;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.categ_list {
+    list-style: none;
+}
+
+.my_btn {
+    width: 80%;
+}
+
+#panel {
+    min-height: 100vh;
+    background-image: url("../images/mainBackground.jpg");
+    background-size: cover;
+}
+
+.side_menu_btn {
+    margin: 20px;
+}
+
+.main_title {
+    text-align: center;
+}

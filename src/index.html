@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="jokesManage">
+<head>
+    <meta charset="utf-8">
+    <title>Slideout Demo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body ng-controller="JokesManageCtrl">
+
+    <nav id="menu">
+        <section class="menu_section">
+            <h3 class="menu_title">Categories</h3>
+            <ul class="categ_list">
+                <li class="categ_item">
+                    <button class="btn active my_btn">Woman</button>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <main id="panel">
+        <button class="btn toggle-button side_menu_btn">Jokes Categories</button>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="page-header main_title">Chuck Norris Jokes</h1>
+                        <div>
+                            <table class="table table-striped">
+                                <tr ng-repeat="joke in jokes">
+                                    <td>{{joke}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <input type="text" ng-change="sendRequest()" ng-model="amountJokes">
+                        <button class="btn btn-primary" ng-click="sendRequest()">Refresh</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/slideout/dist/slideout.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
