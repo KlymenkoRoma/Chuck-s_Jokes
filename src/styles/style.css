@@ -61,8 +61,24 @@ body {
     list-style: none;
 }
 
+.categ_item {
+    margin: 10px 0;
+}
+
 .my_btn {
     width: 80%;
+}
+
+.my_btn:hover {
+    background-color: #bdbdbd;
+}
+
+.active_btn {
+    background-color: #5dd6ff;
+}
+
+.active_btn:hover {
+    background-color: #2da2cc;
 }
 
 #panel {
