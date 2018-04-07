@@ -7,7 +7,7 @@ let jokesManage = angular
         $scope.currCategories = [];
 
         $scope.loadAllCategories = function () {
-            let btnArr = $(".categBtn");
+            let btnArr = $(".categ_btn");
 
             for (let c = 0; c < btnArr.length; c++) {
                 $scope.currCategories.push(btnArr[c].innerHTML.toLowerCase());
@@ -38,7 +38,7 @@ let jokesManage = angular
         };
 
         $scope.sendRequest = function () {
-            $http.get("http://api.icndb.com/jokes/random/700").then(function (response) {
+            $http.get("http://api.icndb.com/jokes/random/700?escape=javascript").then(function (response) {
                 $scope.jokes = [];
                 $scope.currJokes = [];
 

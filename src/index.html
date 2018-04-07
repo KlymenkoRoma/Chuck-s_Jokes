@@ -15,45 +15,47 @@
     <nav id="menu">
         <section class="menu_section">
             <h3 class="menu_title">Categories</h3>
+
             <ul class="categ_list">
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Roundhouse kick</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Roundhouse kick</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Beard</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Beard</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Phone</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Phone</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Woman</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Woman</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Horse</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Horse</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Internet</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Internet</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">God</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">God</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn active_btn categBtn" ng-click="setCategory($event)">Bomb</button>
+                    <button class="btn my_btn active_btn categ_btn" ng-click="setCategory($event)">Bomb</button>
                 </li>
                 <li class="categ_item">
-                    <button class="btn my_btn" ng-click="loadAllCategories()">Select all</button>
+                    <button class="btn my_btn sel_all_btn" ng-click="loadAllCategories()">Select all</button>
                 </li>
             </ul>
         </section>
     </nav>
 
     <main id="panel">
-        <button class="btn toggle-button side_menu_btn">Jokes Categories</button>
-        <header>
+        <button class="toggle-button side_menu_btn">< Jokes Categories</button>
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <h1 class="page-header main_title">Chuck Norris Jokes</h1>
+
                         <div>
                             <table class="table table-striped">
                                 <tr ng-repeat="joke in jokes">
@@ -61,12 +63,15 @@
                                 </tr>
                             </table>
                         </div>
-                        <input type="text" ng-change="sendRequest()" ng-model="amountJokes">
-                        <button class="btn btn-primary" ng-click="sendRequest()">Refresh</button>
+
+                        <label for="amountJokes">Jokes per page</label>
+                        <input type="text" class="set_jokes" id="amountJokes" ng-change="sendRequest()" ng-model="amountJokes">
+
+                        <button class="btn btn-primary pull-right refresh_btn" onclick="window.scroll(0, 0)" ng-click="sendRequest()">Refresh</button>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
     </main>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
