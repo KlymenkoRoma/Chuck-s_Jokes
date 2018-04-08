@@ -1,0 +1,44 @@
+#menu {
+  background-image: linear-gradient(145deg, #1D1F20, #404348);
+  overflow: auto;
+}
+.menu_section {
+  margin: 25px 0;
+}
+.menu_title {
+  text-transform: uppercase;
+  color: #85888d;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.categ_list {
+  list-style: none;
+}
+.categ_item {
+  margin: 10px 0;
+}
+.my_btn {
+  width: 80%;
+}
+.my_btn:hover {
+  background-color: #bdbdbd;
+  transition: background-color 0.4s;
+}
+.active_btn {
+  background-color: #5dd6ff;
+  transition: background-color 0.4s;
+}
+.active_btn:hover {
+  background-color: #2da2cc;
+  transition: background-color 0.4s;
+}
+.sel_all_btn {
+  background-color: #f9b423;
+  transition: background-color 0.4s;
+}
+.sel_all_btn:hover {
+  background-color: #ffdb4c;
+  transition: background-color 0.4s;
+}
