@@ -5,13 +5,13 @@
   }
   .set_jokes {
     display: block;
-    margin: 0 auto 15px;
-    width: 60%;
+    margin: 0 auto 15px !important;
+    width: 60% !important;
   }
   .refresh_btn {
     display: block;
     margin: 0 auto 30px;
-    width: 60%;
+    width: 60% !important;
     float: none !important;
   }
 }
